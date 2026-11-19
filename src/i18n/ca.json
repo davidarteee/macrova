@@ -1,0 +1,17 @@
+{
+  "tabs": { "today": "Avui", "food": "Menjar", "activity": "Activitat", "progress": "Progrés", "profile": "Perfil" },
+  "common": { "comingSoon": "Aquest mòdul s'implementarà en una fase posterior." },
+  "today": { "subtitle": "El teu resum diari" },
+  "food": { "subtitle": "Registre d'aliments i nutrició" },
+  "activity": { "subtitle": "Esport i entrenaments" },
+  "progress": { "subtitle": "Estadístiques i constància" },
+  "profile": {
+    "subtitle": "Compte i preferències",
+    "appearance": "Aparença",
+    "theme": { "light": "Clar", "dark": "Fosc", "system": "Sistema" },
+    "language": "Idioma",
+    "backend": "Connexió amb Supabase",
+    "backendOk": "Configurada",
+    "backendMissing": "No configurada. Copia .env.example a .env i omple les claus."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "tabs": { "today": "Today", "food": "Food", "activity": "Activity", "progress": "Progress", "profile": "Profile" },
+  "common": { "comingSoon": "This module will be implemented in a later phase." },
+  "today": { "subtitle": "Your daily summary" },
+  "food": { "subtitle": "Food logging and nutrition" },
+  "activity": { "subtitle": "Sport and workouts" },
+  "progress": { "subtitle": "Statistics and consistency" },
+  "profile": {
+    "subtitle": "Account and preferences",
+    "appearance": "Appearance",
+    "theme": { "light": "Light", "dark": "Dark", "system": "System" },
+    "language": "Language",
+    "backend": "Supabase connection",
+    "backendOk": "Configured",
+    "backendMissing": "Not configured. Copy .env.example to .env and fill in the keys."
+  }
+}
