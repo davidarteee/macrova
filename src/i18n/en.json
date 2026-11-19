@@ -1,17 +1,81 @@
 {
-  "tabs": { "today": "Today", "food": "Food", "activity": "Activity", "progress": "Progress", "profile": "Profile" },
-  "common": { "comingSoon": "This module will be implemented in a later phase." },
-  "today": { "subtitle": "Your daily summary" },
-  "food": { "subtitle": "Food logging and nutrition" },
-  "activity": { "subtitle": "Sport and workouts" },
-  "progress": { "subtitle": "Statistics and consistency" },
+  "tabs": {
+    "today": "Today",
+    "food": "Food",
+    "activity": "Activity",
+    "progress": "Progress",
+    "profile": "Profile"
+  },
+  "common": {
+    "comingSoon": "This module will be implemented in a later phase."
+  },
+  "today": {
+    "subtitle": "Your daily summary"
+  },
+  "food": {
+    "subtitle": "Food logging and nutrition"
+  },
+  "activity": {
+    "subtitle": "Sport and workouts"
+  },
+  "progress": {
+    "subtitle": "Statistics and consistency"
+  },
   "profile": {
     "subtitle": "Account and preferences",
     "appearance": "Appearance",
-    "theme": { "light": "Light", "dark": "Dark", "system": "System" },
+    "theme": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
     "language": "Language",
     "backend": "Supabase connection",
     "backendOk": "Configured",
     "backendMissing": "Not configured. Copy .env.example to .env and fill in the keys."
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signUp": "Create account",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Repeat password",
+    "name": "Name",
+    "forgot": "Forgot your password?",
+    "noAccount": "No account yet?",
+    "haveAccount": "Already have an account?",
+    "google": "Continue with Google",
+    "or": "or",
+    "sendReset": "Send recovery link",
+    "resetSent": "If the email exists, we sent you a link to reset your password.",
+    "backToSignIn": "Back to sign in",
+    "newPassword": "New password",
+    "updatePassword": "Update password",
+    "passwordUpdated": "Password updated.",
+    "checkEmail": "Check your email to confirm the account, then sign in.",
+    "signOut": "Sign out",
+    "deleteAccount": "Delete account",
+    "deleteConfirmTitle": "Delete account?",
+    "deleteConfirmBody": "This permanently deletes your account and ALL your data. This cannot be undone.",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "account": "Account",
+    "loading": "Loading…",
+    "errors": {
+      "invalid_credentials": "Wrong email or password.",
+      "email_not_confirmed": "Please confirm your email before signing in.",
+      "user_already_exists": "An account with this email already exists.",
+      "weak_password": "Password is too weak (minimum 8 characters).",
+      "rate_limit": "Too many attempts. Try again in a few minutes.",
+      "network": "Cannot reach the server.",
+      "not_configured": "Supabase is not configured (missing .env).",
+      "generic": "Something went wrong. Please try again."
+    },
+    "validation": {
+      "email": "Invalid email",
+      "passwordMin": "At least 8 characters",
+      "passwordMatch": "Passwords do not match",
+      "required": "Required"
+    }
   }
 }

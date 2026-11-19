@@ -1,17 +1,81 @@
 {
-  "tabs": { "today": "Avui", "food": "Menjar", "activity": "Activitat", "progress": "Progrés", "profile": "Perfil" },
-  "common": { "comingSoon": "Aquest mòdul s'implementarà en una fase posterior." },
-  "today": { "subtitle": "El teu resum diari" },
-  "food": { "subtitle": "Registre d'aliments i nutrició" },
-  "activity": { "subtitle": "Esport i entrenaments" },
-  "progress": { "subtitle": "Estadístiques i constància" },
+  "tabs": {
+    "today": "Avui",
+    "food": "Menjar",
+    "activity": "Activitat",
+    "progress": "Progrés",
+    "profile": "Perfil"
+  },
+  "common": {
+    "comingSoon": "Aquest mòdul s'implementarà en una fase posterior."
+  },
+  "today": {
+    "subtitle": "El teu resum diari"
+  },
+  "food": {
+    "subtitle": "Registre d'aliments i nutrició"
+  },
+  "activity": {
+    "subtitle": "Esport i entrenaments"
+  },
+  "progress": {
+    "subtitle": "Estadístiques i constància"
+  },
   "profile": {
     "subtitle": "Compte i preferències",
     "appearance": "Aparença",
-    "theme": { "light": "Clar", "dark": "Fosc", "system": "Sistema" },
+    "theme": {
+      "light": "Clar",
+      "dark": "Fosc",
+      "system": "Sistema"
+    },
     "language": "Idioma",
     "backend": "Connexió amb Supabase",
     "backendOk": "Configurada",
     "backendMissing": "No configurada. Copia .env.example a .env i omple les claus."
+  },
+  "auth": {
+    "signIn": "Inicia sessió",
+    "signUp": "Crea un compte",
+    "email": "Correu electrònic",
+    "password": "Contrasenya",
+    "confirmPassword": "Repeteix la contrasenya",
+    "name": "Nom",
+    "forgot": "Has oblidat la contrasenya?",
+    "noAccount": "Encara no tens compte?",
+    "haveAccount": "Ja tens compte?",
+    "google": "Continua amb Google",
+    "or": "o",
+    "sendReset": "Envia l'enllaç de recuperació",
+    "resetSent": "Si el correu existeix, t'hem enviat un enllaç per restablir la contrasenya.",
+    "backToSignIn": "Torna a l'inici de sessió",
+    "newPassword": "Nova contrasenya",
+    "updatePassword": "Actualitza la contrasenya",
+    "passwordUpdated": "Contrasenya actualitzada.",
+    "checkEmail": "Revisa el correu per confirmar el compte i després inicia sessió.",
+    "signOut": "Tanca la sessió",
+    "deleteAccount": "Elimina el compte",
+    "deleteConfirmTitle": "Eliminar el compte?",
+    "deleteConfirmBody": "Això esborra el teu compte i TOTES les teves dades de manera permanent. No es pot desfer.",
+    "cancel": "Cancel·la",
+    "delete": "Elimina",
+    "account": "Compte",
+    "loading": "Carregant…",
+    "errors": {
+      "invalid_credentials": "Correu o contrasenya incorrectes.",
+      "email_not_confirmed": "Cal confirmar el correu abans d'iniciar sessió.",
+      "user_already_exists": "Ja existeix un compte amb aquest correu.",
+      "weak_password": "La contrasenya és massa feble (mínim 8 caràcters).",
+      "rate_limit": "Massa intents. Torna-ho a provar d'aquí uns minuts.",
+      "network": "No hi ha connexió amb el servidor.",
+      "not_configured": "Supabase no està configurat (falta el .env).",
+      "generic": "S'ha produït un error. Torna-ho a provar."
+    },
+    "validation": {
+      "email": "Correu no vàlid",
+      "passwordMin": "Mínim 8 caràcters",
+      "passwordMatch": "Les contrasenyes no coincideixen",
+      "required": "Obligatori"
+    }
   }
 }

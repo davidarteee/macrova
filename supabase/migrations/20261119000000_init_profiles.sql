@@ -77,3 +77,8 @@ $$;
 create trigger on_auth_user_created
   after insert on auth.users
   for each row execute function public.handle_new_user();
+
+-- API access is NOT granted automatically on this project, so grant explicitly.
+-- RLS policies above still restrict every row to its owner.
+grant select, insert, update, delete on public.profiles to authenticated;
+grant select, insert, update, delete on public.user_preferences to authenticated;

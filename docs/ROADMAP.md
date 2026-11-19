@@ -5,8 +5,8 @@ Llegenda: ✅ fet · 🔄 en curs · ⏳ pendent · ⚠️ bloquejat per credenc
 | Fase | Contingut | Sortida verificable | Bloquejadors externs | Estat |
 |---|---|---|---|---|
 | 0 | Auditoria, arquitectura, comptes | Aquests documents | — | ✅ |
-| 1 | Expo + TS + Router + RNW, sistema de disseny (tokens clar/fosc), navegació (tabs/sidebar), client Supabase, `.env`, migracions inicials | `npm run web` arrenca; tema clar/fosc/sistema; `tsc` i lint nets | URL i anon key de Supabase per connectar | ⏳ |
-| 2 | Auth (email + Google + reset + delete), perfils, esquema complet, RLS | Tests SQL: usuari A no veu dades de B; login real | Projecte Supabase + Google OAuth | ⏳ ⚠️ |
+| 1 | Expo + TS + Router + RNW, sistema de disseny (tokens clar/fosc), navegació (tabs/sidebar), client Supabase, `.env`, migracions inicials | `npm run web` arrenca; tema clar/fosc/sistema; `tsc` i lint nets | URL i anon key de Supabase per connectar | ✅ |
+| 2 | Auth (email + Google + reset + delete), perfils, esquema complet, RLS | Tests SQL: usuari A no veu dades de B; login real | Projecte Supabase + Google OAuth | 🔄 (falta Google OAuth i prova manual) |
 | 3 | Les 5 seccions amb dades de prova (`dev-fixtures/`) | Navegació completa, estats càrrega/buit/error | — | ⏳ |
 | 4 | Catàleg, cerca, OFF, codi de barres, aliments propis, àpats, preferits, plantilles | Registrar un aliment real i veure els macros correctes | Clau USDA (opcional) | ⏳ |
 | 5 | Motor BMR/TDEE/objectius setmanals/ajust d'exercici | Tests unitaris amb casos coneguts, sense doble recompte | — | ⏳ |

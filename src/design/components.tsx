@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pressable, ScrollView, Text as RNText, View, type TextProps, type ViewStyle } from 'react-native';
+import { Pressable, ScrollView, Text as RNText, TextInput, View, type TextInputProps, type TextProps, type ViewStyle } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { font, radius, space } from './tokens';
 import { useTheme } from './theme';
@@ -81,6 +81,42 @@ export function Segmented<T extends string>({ value, options, onChange }: {
           </Pressable>
         );
       })}
+    </View>
+  );
+}
+
+export function Field({ label, error, ...input }: TextInputProps & { label: string; error?: string }) {
+  const { colors } = useTheme();
+  return (
+    <View style={{ gap: space.xs }}>
+      <RNText style={{ color: colors.textMuted, fontSize: font.sm, fontWeight: '500' }}>{label}</RNText>
+      <TextInput
+        placeholderTextColor={colors.textMuted}
+        {...input}
+        accessibilityLabel={label}
+        style={{
+          backgroundColor: colors.surface,
+          borderColor: error ? colors.danger : colors.border,
+          borderWidth: 1,
+          borderRadius: radius.md,
+          paddingHorizontal: space.md,
+          paddingVertical: space.md,
+          minHeight: 44,
+          color: colors.text,
+          fontSize: font.md,
+        }}
+      />
+      {error ? <RNText style={{ color: colors.danger, fontSize: font.xs }}>{error}</RNText> : null}
+    </View>
+  );
+}
+
+export function Notice({ kind, children }: { kind: 'error' | 'success'; children: React.ReactNode }) {
+  const { colors } = useTheme();
+  const c = kind === 'error' ? colors.danger : colors.positive;
+  return (
+    <View accessibilityRole="alert" style={{ borderColor: c, borderWidth: 1, borderRadius: radius.md, padding: space.md }}>
+      <RNText style={{ color: c, fontSize: font.sm }}>{children}</RNText>
     </View>
   );
 }
